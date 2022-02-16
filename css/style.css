@@ -1,0 +1,107 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.heading{
+    background-color: rgb(0, 71, 71);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 73px;
+    margin-top: 30px;
+}
+h2{
+    text-align: center;
+}
+img{
+    width: 705px;
+    height: 815px;
+}
+.income-expense{
+    width: 542px;
+    height: 815px;
+    background-color: #F8F8F8;
+}
+.income, .expense, .calculate{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+p{
+    text-align: right;
+}
+.income-input{
+    border: 0;
+    width: 229px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    margin-left: 30px;
+}
+#clothes{
+    margin-left: 5px;
+}
+#income-text{
+    margin-left: 15px;
+}
+.calculate-btn{
+    background-color: #59A5FF;
+    border: 0;
+    color: white;
+    width: 199px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-left: 85px;
+}
+.save{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.save-p{
+    text-align: left;
+    margin-left: 50px;
+}
+.save-input{
+    border: 0;
+    width: 229px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #DCDCDC;
+    margin-left: 30px;
+}
+.save-btn{
+    background-color: #59A5FF;
+    border: 0;
+    color: white;
+    width: 199px;
+    height: 51px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}

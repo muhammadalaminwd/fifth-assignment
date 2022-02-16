@@ -31,7 +31,7 @@ img{
     height: 815px;
     background-color: #F8F8F8;
 }
-.income, .expense, .calculate{
+.income, .expense, .calculate-button{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -48,7 +48,7 @@ p{
     background-color: #DCDCDC;
     margin-left: 30px;
 }
-#clothes{
+#clothes-text{
     margin-left: 5px;
 }
 #income-text{
@@ -95,7 +95,11 @@ p{
     font-weight: 600;
     border-radius: 5px;
 }
-
+.total-expense{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* responsive */
 @media only screen and (max-width: 600px) {

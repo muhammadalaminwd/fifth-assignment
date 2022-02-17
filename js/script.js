@@ -58,5 +58,4 @@ document.getElementById('calculate').addEventListener('click', function(){
 
         const remaingBalance = savingAmountResult - savingBalance;
         remaingBalanceText.innerText = remaingBalance;
-
     })

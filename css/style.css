@@ -109,10 +109,20 @@ p{
 }
 
 /* responsive */
-@media only screen and (max-width: 600px) {
+
+/* For Mobile phones */
+@media only screen and (max-width: 768px){
     .container{
         display: block;
         justify-content: center;
         align-items: center;
+        width: 50%;
     }
-}
+    }
+
+
+
+
+
+
+

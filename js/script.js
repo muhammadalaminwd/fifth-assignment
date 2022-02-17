@@ -31,3 +31,14 @@ document.getElementById('calculate').addEventListener('click', function(){
     const balanceText = parseFloat(balance.innerText);
     balance.innerText = incomeAmount - totalExpensesField.innerText; 
 })
+    // saving amount calculation
+    document.getElementById('save-button').addEventListener('click', function(){
+        const saveInput = document.getElementById('save-input');
+        const saveInputText = parseFloat(saveInput.value);
+        saveInput.value = '';
+
+        const savingAmount = document.getElementById('saving-amount');
+        const savingAmountText = parseFloat(savingAmount.innerText);
+        // console.log(savingAmountText);
+        savingAmount.innerText = savingAmountText + balance.innerText;
+    })

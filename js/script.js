@@ -1,7 +1,8 @@
 document.getElementById('calculate').addEventListener('click', function(){
     // get income
     const incomeText = document.getElementById('income-text');
-    const incomeAmount = incomeText.value;
+    const incomeAmount = parseFloat(incomeText.value);
+    incomeText.value = '';
     
     // get the expenses
 
@@ -18,10 +19,15 @@ document.getElementById('calculate').addEventListener('click', function(){
     const clothesExpense = parseFloat(clothesText.value);
     clothesText.value = '';
     // add the expenses
-    const totalExpenses = foodExpense + rentExpense + clothesExpense;
+    // const totalExpenses = foodExpense + rentExpense + clothesExpense;
+
     // showing in total expenses field
     const totalExpensesField = document.getElementById('total-expenses');
-    const newTotalExpensesField = totalExpensesField.innerText;
+    const newTotalExpensesField = parseFloat(totalExpensesField.innerText);
+    totalExpensesField.innerText = newTotalExpensesField + foodExpense + rentExpense + clothesExpense;
     
-
+    // update balance after substract icome from expense
+    const balance = document.getElementById('balance');
+    const balanceText = parseFloat(balance.innerText);
+    balance.innerText = incomeAmount - totalExpensesField.innerText; 
 })
